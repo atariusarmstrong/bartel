@@ -4,11 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atariusarmstrong/bartel.git"
+    "url": "git+https://github.com/atariusarmstrong/bartel.git"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +19,10 @@
     "hbs": "^4.0.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.4.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/atariusarmstrong/bartel/issues"
+  },
+  "homepage": "https://github.com/atariusarmstrong/bartel#readme",
+  "devDependencies": {}
 }
