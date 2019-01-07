@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,9 @@
     "express": "^4.16.4",
     "hbs": "^4.0.1",
     "method-override": "^3.0.0",
-    "mongoose": "^5.4.2"
+    "mongoose": "^5.4.2",
+    "nodemon": "^1.18.9",
+    "passport-local": "^1.0.0"
   },
   "bugs": {
     "url": "https://github.com/atariusarmstrong/bartel/issues"
