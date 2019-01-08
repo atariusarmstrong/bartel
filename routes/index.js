@@ -10,6 +10,6 @@ router.post('/', appController.create)
 router.get('/index', appController.index)
 router.get('/newbar', appController.new)
 router.post('/index', barController.create)
-router.get('/:id', barController.show)
+router.get('/:barId', barController.show)
 
 module.exports = router
