@@ -17,6 +17,12 @@ const barController = {
         Bar.findById(barId).then((barpost) => {
             res.render('app/show', { barpost })
         })
+    },
+    edit: (req, res) => {
+        const barId = req.params.barId
+        Bar.findById(barId).then(() => {
+            res.render('app/edit')
+        })
     }
 }
 
