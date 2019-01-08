@@ -23,7 +23,11 @@ const appController = {
             res.render('app/index', { barpost })
         })
         
+    },
+    new: (req, res) => {
+        res.render("app/create")
     }
+
 }
 
 module.exports = appController

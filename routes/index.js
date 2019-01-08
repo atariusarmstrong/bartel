@@ -8,5 +8,7 @@ const userController = require('../controllers/userController')
 router.get('/', appController.signup)
 router.post('/', appController.create)
 router.get('/index', appController.index)
+router.get('/newbar', appController.new)
+router.post('/index', barController.create)
 
 module.exports = router
