@@ -1,1 +1,11 @@
 <h1>This will be the homepage containing posts</h1>
+
+{{#each barpost}}
+<div>
+    <h3>{{barName}}</h3>
+    <p>{{location}}</p>
+    <img src={{image}} alt="{{barName}}">
+    <p>{{description}}</p>
+</div>
+
+{{/each}}
