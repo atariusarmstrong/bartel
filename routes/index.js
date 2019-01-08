@@ -5,6 +5,8 @@ const barController = require('../controllers/barController')
 const commentController = require('../controllers/commentController')
 const userController = require('../controllers/userController')
 
-router.get('/', appController.index)
+router.get('/', appController.signup)
+router.post('/', appController.create)
+router.get('/index', appController.index)
 
 module.exports = router

@@ -9,4 +9,4 @@ const User = new Schema({
     bio: String
 })
 
-module.exports = mongoose.model("User", user)
+module.exports = mongoose.model("User", User)
