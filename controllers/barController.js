@@ -11,6 +11,12 @@ const barController = {
             comments: []
         }).then(()=>
         res.redirect('/index'))
+    },
+    show: (req, res) => {
+        const barId = req.params.barId
+        Bar.findById(barId).then((barpost) => {
+            res.render('app/show')
+        })
     }
 }
 
