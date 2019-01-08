@@ -9,8 +9,10 @@ router.get('/', appController.signup)
 router.post('/', appController.create)
 router.get('/index', appController.index)
 router.get('/newbar', appController.new)
+
 router.post('/index', barController.create)
 router.get('/:barId', barController.show)
 router.get('/:barId/edit', barController.edit)
+router.patch('/:barId', barController.update)
 
 module.exports = router

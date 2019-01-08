@@ -21,7 +21,13 @@ const barController = {
     edit: (req, res) => {
         const barId = req.params.barId
         Bar.findById(barId).then(() => {
-            res.render('app/edit')
+            res.render('app/edit', { barId })
+        })
+    },
+    update: (req, res) => {
+        const barId = req.params.barId
+        Bar.findByIdAndUpdate(barId, req.body, {new: true}).then((barpost)=> {
+            res.redirect(`/${barId}`)
         })
     }
 }
