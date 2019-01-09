@@ -1,6 +1,7 @@
 const Bar = require('../models/Bar')
 
 
+
 const barController = {
     create: (req, res) => {
         Bar.create({

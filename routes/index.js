@@ -12,6 +12,8 @@ router.get('/newbar', appController.new)
 
 router.get('/myprofile', userController.index)
 
+router.get('/:barId/comments', commentController.index)
+
 router.post('/index', barController.create)
 router.get('/:barId', barController.show)
 router.get('/:barId/edit', barController.edit)
