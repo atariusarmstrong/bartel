@@ -4,10 +4,13 @@ const router = require('./routes/index')
 const methodOverride = require('method-override')
 const passportlocal = require('passport-local')
 
+
+app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride('_method'))
 app.use('/', router)
+
 
 
 app.set('view engine', 'hbs')
