@@ -13,6 +13,7 @@ router.get('/newbar', appController.new)
 router.get('/myprofile', userController.index)
 
 router.get('/:barId/comments', commentController.index)
+router.post('/:barId/comments', commentController.create)
 
 router.post('/index', barController.create)
 router.get('/:barId', barController.show)

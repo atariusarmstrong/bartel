@@ -12,12 +12,19 @@ Bar.deleteMany({})
         }).then((bar) => {
             const comment1 = Comment.create({
                 user: "Ashley",
-                test: "Love this place"
+                text: "Love this place"
             }).then((comment)=> {
                 bar.comments.push(comment)
             })
 
-        Promise.all([comment1])
+            const comment2 = Comment.create({
+                user: "Eric",
+                text: "Love the patio. Slow service, however. Maybe I'll give it another try."
+            }).then((comment) => {
+                bar.comments.push(comment)
+            })
+
+        Promise.all([comment1, comment2])
         .then(()=> {
             bar.save()
         })

@@ -4,7 +4,21 @@ const User = require('../models/User')
 
 const commentController = {
     index: (req, res) => {
-        res.render("comments/index")
+        const barId = req.params.barId
+        Bar.findById(barId).populate('comments').then((bar) => {
+            const comments = bar.comments
+            res.render('comments/index', { comments, barId })
+        })
+    },
+    create: (req, res) => {
+        const barId = req.params.barId
+        Bar.findById(barId).then((barpost) => {
+            Comment.create(req.body).then((comment) =>{
+                barpost.comments.push(comment)
+                barpost.save()
+                res.redirect(`/${barpost._id}/comments`)
+            })
+        })
     }
 }
 

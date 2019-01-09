@@ -6,7 +6,10 @@ const Bar = new Schema({
     location: String,
     image: String,
     description: String,
-    comments: []
+    comments: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Comment'
+    }]
 })
 
 module.exports = mongoose.model("Bar", Bar)
