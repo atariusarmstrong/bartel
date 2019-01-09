@@ -15,7 +15,7 @@ const barController = {
     },
     show: (req, res) => {
         const barId = req.params.barId
-        Bar.findById(barId).then((barpost) => {
+        Bar.findById(barId).populate('comments').then((barpost) => {
             res.render('app/show', { barpost })
         })
     },

@@ -2,6 +2,29 @@ const Bar = require('../models/Bar')
 const Comment = require('../models/Comment')
 
 Bar.deleteMany({})
+    .then(() => {
+        return Bar.create({
+            barName: "Einstein's",
+            location: "Atlanta, GA",
+            image: "https://resizer.otstatic.com/v2/photos/huge/23712449.jpg",
+            description: "Lovely restaurant. Great for Sunday Brunch. Nene Leakes has been spotted here before. Be sure to try their mimosas",
+            comments: []
+        }).then((bar)=> {
+            const comment1 = Comment.create({
+                user: "Morgan",
+                text: "That's right! I saw Nene Leakes there too!"
+            }).then((comment)=> {
+                bar.comments.push(comment)
+            })
+
+        Promise.all([comment1])
+        .then(()=> {
+            bar.save()
+        })
+        })
+
+        
+    })
     .then(()=> {
         return Bar.create({
             barName: "Joe's on Juniper",
