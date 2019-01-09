@@ -29,6 +29,12 @@ const barController = {
         Bar.findByIdAndUpdate(barId, req.body, {new: true}).then((barpost)=> {
             res.redirect(`/${barId}`)
         })
+    },
+    delete: (req, res) => {
+        const barId = req.params.barId
+        Bar.findByIdAndRemove(barId).then(()=> {
+            res.redirect('/index')
+        })
     }
 }
 

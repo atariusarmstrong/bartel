@@ -14,5 +14,6 @@ router.post('/index', barController.create)
 router.get('/:barId', barController.show)
 router.get('/:barId/edit', barController.edit)
 router.patch('/:barId', barController.update)
+router.delete('/:barId', barController.delete)
 
 module.exports = router
