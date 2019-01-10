@@ -1,9 +1,11 @@
 
 <h2>This will contain all the users</h2>
 {{#each userpost}}
-    <div class="user-card" style="background-image: url({{img}})">
-        <p>{{username}}</p>
-    </div>
+    <a href="user/{{_id}}">
+        <div class="user-card" style="background-image: url({{img}})">
+           <p>{{username}}</p>
+        </div>
+    </a>
 
 {{/each}}
 
