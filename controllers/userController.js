@@ -3,8 +3,11 @@ const Bar = require('../models/Bar')
 
 const userController = {
     index: (req, res) => {
-        const userId = req.params.userId
-        res.render('user/index')
+        User.find({}).then((userpost) => {
+            res.render('user/index', {userpost})
+        })
+
+        
     },
     show: (req, res) => {
         const userId = req.params.userId
@@ -13,7 +16,6 @@ const userController = {
             console.log(user, 'hello')
             res.render('user/show', {user})
         })
-        
     }
 }
 

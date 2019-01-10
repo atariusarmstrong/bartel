@@ -1,3 +1,11 @@
 
+<h2>This will contain all the users</h2>
+{{#each userpost}}
+    <div class="user-card" style="background-image: url({{img}})">
+        <p>{{username}}</p>
+    </div>
 
-<h2>This is a user profile</h2>
+{{/each}}
+
+{{!-- {{user.username}} --}}
+<button>Delete</button>

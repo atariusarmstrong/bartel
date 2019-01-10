@@ -2,6 +2,10 @@ const Bar = require('../models/Bar')
 const Comment = require('../models/Comment')
 const User = require('../models/User')
 
+Comment.deleteMany({})
+    .then(() => {
+User.deleteMany({})
+    .then(() => {
 Bar.deleteMany({})
     .then(() => {
         return Bar.create({
@@ -22,7 +26,8 @@ Bar.deleteMany({})
             const author = User.create({
                 username: "Samantha",
                 email: 'samantha@samantha.com',
-                bio: 'I love traveling.'
+                bio: 'I love traveling.',
+                img: 'https://images.pexels.com/photos/1771383/pexels-photo-1771383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
             }).then((samantha)=> {
                 bar.author.push(samantha)
             })
@@ -67,4 +72,6 @@ Bar.deleteMany({})
 
         
         })
+    })
+})
     })

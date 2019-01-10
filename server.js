@@ -5,7 +5,6 @@ const methodOverride = require('method-override')
 const passportlocal = require('passport-local')
 const session = require('express-session')
 
-
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

@@ -6,11 +6,13 @@ const commentController = require('../controllers/commentController')
 const userController = require('../controllers/userController')
 
 router.get('/', appController.signup)
-router.post('/', appController.create)
+router.get('/user', userController.index)
+router.post('/user', appController.create)
+router.get('/user/:userId', userController.show)
 router.get('/index', appController.index)
 router.get('/newbar', appController.new)
 
-router.get('/myprofile', userController.index)
+
 
 
 router.get('/:barId/comments', commentController.index)
@@ -23,7 +25,6 @@ router.get('/:barId/edit', barController.edit)
 router.patch('/:barId', barController.update)
 router.delete('/:barId', barController.delete)
 
-router.get('/user/:userId', userController.show)
 
 
 
