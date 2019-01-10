@@ -48,3 +48,8 @@ h3 {
     float: left;
     background-size: inherit;
 }
+
+.profpic {
+    width: 50px;
+    height: 50px;
+}

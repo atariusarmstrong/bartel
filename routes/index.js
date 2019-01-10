@@ -9,6 +9,7 @@ router.get('/', appController.signup)
 router.get('/user', userController.index)
 router.post('/user', appController.create)
 router.get('/user/:userId', userController.show)
+router.delete('/user/:userId', userController.delete)
 router.get('/index', appController.index)
 router.get('/newbar', appController.new)
 

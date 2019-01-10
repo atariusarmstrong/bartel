@@ -1,7 +1,10 @@
-<div class="user-page">
 
-    <h1>This is a user profile</h1>
-    <p>testing 123</p>
-    <h2>{{user.username}}</h2>
+<h1>This is a user profile</h1>
 
-</div>
+<h2>{{user.username}}</h2>
+<div><img src="{{user.img}}" class="profpic"/></div>
+    
+<p>{{user.bio}}</p>
+<form action="/user/{{user._id}}?_method=DELETE" method="POST">
+    <button class="pure-button">Delete Profile</button>
+</form>
