@@ -1,8 +1,11 @@
-# bartel
-###Unit 2 Project by Atarius Armstrong
+Bartel
+====
+### Unit 2 Project by Atarius Armstrong
 
+Bartel is a fullstack application where users can log their bars and restaurants to go day drinking.
 
-##Dependencies
+Dependencies
+---
 * Express
 * Node.js
 * Method Override
