@@ -1,15 +1,8 @@
-<div class="pure-menu pure-menu-horizontal">
-    <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="/index" class="pure-menu-link">Home</a></li>
-        <li class="pure-menu-item"><a href="/newbar" class="pure-menu-link">Add Bar</a></li>
-        <li class="pure-menu-item"><a href="/myprofile" class="pure-menu-link">Profile</a></li>
-    </ul>
 
-
-
-</div>
 
 <h2>{{barpost.barName}}</h2>
+<h2>{{barpost.location}}</h2>
+<h4>Submitted by <a href="/user/{{barpost._id}}">{{barpost.author.0.username}}</a></h4>
 <img src={{barpost.image}} alt="{{barpost.barName}}">
 <p>{{barpost.description}}</p>
 
@@ -21,11 +14,11 @@
     <button class="pure-button" id="delete">Delete Bar</button>
 </form>
 
-<div class="delete-modal">
+{{!-- <div class="delete-modal">
     <div>
         <p>Are you sure you want to delete?</p>
     </div>
-</div>
+</div> --}}
 
 <h3>Comments</h3>
 

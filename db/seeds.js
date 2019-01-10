@@ -1,11 +1,13 @@
 const Bar = require('../models/Bar')
 const Comment = require('../models/Comment')
+const User = require('../models/User')
 
 Bar.deleteMany({})
     .then(() => {
         return Bar.create({
             barName: "Einstein's",
             location: "Atlanta, GA",
+            author: [],
             image: "https://resizer.otstatic.com/v2/photos/huge/23712449.jpg",
             description: "Lovely restaurant. Great for Sunday Brunch. Nene Leakes has been spotted here before. Be sure to try their mimosas",
             comments: []
@@ -17,9 +19,19 @@ Bar.deleteMany({})
                 bar.comments.push(comment)
             })
 
-        Promise.all([comment1])
+            const author = User.create({
+                username: "Samantha",
+                email: 'samantha@samantha.com',
+                bio: 'I love traveling.'
+            }).then((samantha)=> {
+                bar.author.push(samantha)
+            })
+
+        Promise.all([comment1, author])
         .then(()=> {
             bar.save()
+
+
         })
         })
 

@@ -12,6 +12,19 @@ app.use(express.json());
 app.use(methodOverride('_method'))
 app.use('/', router)
 
+
+// app.set('trust proxy', 1)
+// app.use(session({
+//     secret: 'There are drinks to be had.',
+//     resave: false,
+//     saveUninitialized: true,
+//     cookie: { secure: true }
+// }))
+
+// if (app.get('env') === 'production') {
+//     app.set('tr')
+// }
+
 // passportlocal.use(new LocalStrategy)(
 //     function(username, password, done) {
 //         User.findOne({ username: username }, function (err, user) {
