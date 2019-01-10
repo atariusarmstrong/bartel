@@ -8,3 +8,5 @@
 * Method Override
 * Passport Local
 * Express-session
+
+Royalty free images pulled from Pexels & Unsplash
