@@ -8,6 +8,7 @@ const commentController = {
         Bar.findById(barId).populate('comments').then((bar) => {
             const comments = bar.comments
             res.render('comments/index', { comments, barId })
+
         })
     },
     create: (req, res) => {
@@ -18,6 +19,13 @@ const commentController = {
                 barpost.save()
                 res.redirect(`/${barpost._id}/comments`)
             })
+        })
+    },
+    delete: (req, res) => {
+        const commentId = req.params.id
+        const barId = req.params.barId
+        Comment.findByIdAndDelete(commentId).then(()=> {
+            res.redirect(`/${barId}/comments`)
         })
     }
 }

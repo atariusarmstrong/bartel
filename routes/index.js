@@ -14,6 +14,7 @@ router.get('/myprofile', userController.index)
 
 router.get('/:barId/comments', commentController.index)
 router.post('/:barId/comments', commentController.create)
+router.delete('/:barId/comments/:id', commentController.delete)
 
 router.post('/index', barController.create)
 router.get('/:barId', barController.show)
