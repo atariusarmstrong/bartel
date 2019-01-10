@@ -11,7 +11,7 @@ router.get('/index', appController.index)
 router.get('/newbar', appController.new)
 
 router.get('/myprofile', userController.index)
-router.get('/user/:userId', userController.show)
+
 
 router.get('/:barId/comments', commentController.index)
 router.post('/:barId/comments', commentController.create)
@@ -22,6 +22,8 @@ router.get('/:barId', barController.show)
 router.get('/:barId/edit', barController.edit)
 router.patch('/:barId', barController.update)
 router.delete('/:barId', barController.delete)
+
+router.get('/user/:userId', userController.show)
 
 
 

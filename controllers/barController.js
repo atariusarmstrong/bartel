@@ -17,7 +17,9 @@ const barController = {
         const barId = req.params.barId
         const userId = req.params.userId
         Bar.findById(barId).populate('comments author').then((barpost) => {
-            console.log(barpost.author[0].username)
+            // console.log(barpost.author[0].username)
+            console.log(barpost);
+            
             res.render('app/show', { barpost })
         })
     },
