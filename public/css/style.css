@@ -15,9 +15,11 @@ h1 {
 .navbar {
     width: 250px;
     margin: 0 auto;
+    color: white;
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
@@ -55,15 +57,18 @@ h3 {
     max-height: 400px;
 }
 
-/* .form {
-    margin: 0 auto;
-    width: 800px;
-    height: 800px;
-    justify-content: center;
-} */
+.header {
+    height: 200px;
+    background-image: url(https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: inherit;
+    background-position: center center;
+    margin-bottom: 40px;
+}
 
 .location {
-    color: grey;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 15px;
 }
 
 .user-card {
@@ -79,11 +84,6 @@ h3 {
     font: "Barlow Condensed", sans-serif;
     font-size: 20px;
     background-color: grey;
-}
-
-.profpic {
-    width: 50px;
-    height: 50px;
 }
 
 .commentholder {

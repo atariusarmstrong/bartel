@@ -1,7 +1,29 @@
+<style>
+    body {
+        background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    }
+    h1{
+        font-family: 'Pacifico', cursive;
+        font-size: 60px;
+        color: white;
+        text-align: center;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    .profpic {
+    max-width: 250px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+</style>
 
-<h2>{{user.username}}</h2>
+
 <div><img src="{{user.img}}" class="profpic"/></div>
-    
+
+<h2>{{user.username}}</h2>   
 <p>{{user.bio}}</p>
 <a href="/user/{{user._id}}/edit">
     <button class="pure-button">Edit Profile</button>

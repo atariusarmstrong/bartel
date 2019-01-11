@@ -4,19 +4,22 @@
         <title>Bartel</title>
         <!--PUREFORM CSS-->
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Pacifico" rel="stylesheet">       
+        
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Pacifico" rel="stylesheet">   
+        <link rel="stylesheet" type="text/css" href="css/style.css">    
     </head>
     <body>
-        {{!-- <script src="javascript/app.js"></script> --}}
-        <h1><a href="/index">Bartel</a></h1>
-        <div class="pure-menu pure-menu-horizontal navbar">
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item pure-menu-selected"><a href="/index" class="pure-menu-link">Home</a></li>
-                <li class="pure-menu-item"><a href="/newbar" class="pure-menu-link">Add Bar</a></li>
-                 <li class="pure-menu-item"><a href="/user" class="pure-menu-link">Users</a></li>
-            </ul>
+        <div class="header">
+            <h1><a href="/index">Bartel</a></h1>
+            <div class="pure-menu-horizontal navbar">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-selected"><a href="/index" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="/newbar" class="pure-menu-link">Add Bar</a></li>
+                    <li class="pure-menu-item"><a href="/user" class="pure-menu-link">Users</a></li>
+                </ul>
+            </div>
         </div>
+
         {{{ body }}}
     </body>
 </html>

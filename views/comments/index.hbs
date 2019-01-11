@@ -1,8 +1,25 @@
+<style>
+    body {
+        background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    }
+    h1{
+        font-family: 'Pacifico', cursive;
+        font-size: 60px;
+        color: white;
+        text-align: center;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+
 <p><a href="/{{barId}}">Go Back</a></p>
 
 {{#each comments}}
 <div>
-    <h3>{{user}}</h3>
+    <h3 style="font-family: 'Barlow Condensed', sans serif">{{user}}</h3>
     <p>{{text}}</p>
 
     <form action="/{{../barId}}/comments/{{_id}}?_method=DELETE" method="POST">
@@ -18,3 +35,5 @@
     <textarea type="text" name="text" placeholder="Leave a comment..."></textarea>
     <button type="submit">Add comment</button>
 </form>
+
+</body>

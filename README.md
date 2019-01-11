@@ -32,3 +32,12 @@ Technologies Used
 
 Future Development
 ---
+* User authentication to prevent manipulation of other users' profiles, bar posts, and comments.
+* Social exchange through user's profiles
+* Add ratings to bars
+* Allow user's to click a button for bars that they've been to that would then be added to their profiles.
+
+Challenges Faced
+---
+When creating CSS for this application, it would render for the majority of the application except for the User's profiles, the editing page for the bar posts, and the page for the bars' comments. So for those particular views I had to manually insert the stylings.
+
