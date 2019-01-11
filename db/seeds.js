@@ -6,6 +6,19 @@ Comment.deleteMany({})
     .then(() => {
 User.deleteMany({})
     .then(() => {
+        return User.create({
+            username: "great.steph",
+            email: "thegreatsteph@google.com",
+            bio: "Traveler. Blogger. Influencer. Wine enthusiast. I'm all about exploring the unkown. Tell me your favorite frose and I'll tell you mine.",
+            img: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+        }).then(() =>{
+        return User.create({
+            username: "DAVO",
+            email: "whatsup@yahoo.com",
+            bio: "Favorite beers?",
+            img: 'https://images.pexels.com/photos/1756366/pexels-photo-1756366.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+        }).then(() => {
+        
 Bar.deleteMany({})
     .then(() => {
         return Bar.create({
@@ -72,6 +85,8 @@ Bar.deleteMany({})
 
         
         })
+    })
+})
     })
 })
     })

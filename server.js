@@ -4,11 +4,12 @@ const router = require('./routes/index')
 const methodOverride = require('method-override')
 
 
-app.use(express.static('public'))
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride('_method'))
 app.use('/', router)
+app.use(express.static('public'))
 
 
 app.set('view engine', 'hbs')

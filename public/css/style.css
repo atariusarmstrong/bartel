@@ -46,7 +46,13 @@ h3 {
     height: 200px;
     border: 10px solid white;
     float: left;
-    background-size: inherit;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    vertical-align: text-bottom;
+    color: white;
+    font: "Barlow Condensed", sans-serif;
+    font-size: 20px;
 }
 
 .profpic {
@@ -62,3 +68,6 @@ h3 {
     width: 600px;
     height: 200px;
 }
+ h4 {
+     
+ }
