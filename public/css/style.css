@@ -1,11 +1,8 @@
-.delete-modal {
-    display: none;
-    position: fixed;
-}
-
 body {
     background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
     background-size: cover;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 h1 {
@@ -35,6 +32,7 @@ a {
     justify-content: center;
     align-items: center;
     background-size: inherit;
+    background-color: gray;
 }
 
 .inner-content {
@@ -45,6 +43,27 @@ h3 {
     color: white;
     font-family: "Barlow Condensed", sans-serif;
     font-size: 40px;
+}
+.barcontainer {
+    background-image: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.barimage {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+/* .form {
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+    justify-content: center;
+} */
+
+.location {
+    color: grey;
 }
 
 .user-card {
@@ -74,4 +93,5 @@ h3 {
     overflow: scroll;
     width: 600px;
     height: 200px;
+    margin: 0 auto;
 }

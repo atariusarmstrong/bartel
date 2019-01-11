@@ -1,13 +1,10 @@
 
-{{#each barpost}}
-<div class="bartel-pin" style="background-image: url({{image}})">
-    <div class="inner-content">
-        <h3><a href="{{_id}}">{{barName}}</a></h3>
-        <p>{{location}}</p>
-        {{!-- <img src={{image}} alt="{{barName}}" class="bartel-pin-image"> --}}
-        {{!-- <p>{{description}}</p> --}}
-    </div>
-    
-</div>
+    {{#each barpost}}
+        <div class="bartel-pin" style="background-image: url({{image}})">
+            <div class="inner-content">
+                <h3><a href="{{_id}}">{{barName}}</a></h3>
+                <p>{{location}}</p>
+            </div>
+        </div>
+    {{/each}}    
 
-{{/each}}

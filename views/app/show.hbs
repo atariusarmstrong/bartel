@@ -1,31 +1,35 @@
+<div class="barcontainer">
+    <h3>{{barpost.barName}}</h3>
+    <h2 class="location">{{barpost.location}}</h2>
+    <h4>Submitted by <a href="/user/{{barpost.author.0._id}}">{{barpost.author.0.username}}</a></h4>
+    <img class="barimage" src={{barpost.image}} alt="{{barpost.barName}}">
+    <p>{{barpost.description}}</p>
 
-<h2>{{barpost.barName}}</h2>
-<h2>{{barpost.location}}</h2>
-<h4>Submitted by <a href="/user/{{barpost.author.0._id}}">{{barpost.author.0.username}}</a></h4>
-<img src={{barpost.image}} alt="{{barpost.barName}}">
-<p>{{barpost.description}}</p>
+    <a href="/{{barpost._id}}/edit">
+        <button class="pure-button">Edit Bar</button>
+    </a>
+    <form action="/{{barpost._id}}?_method=DELETE" method="POST">
+        <button class="pure-button" id="delete">Delete Bar</button>
+    </form>
+</div>
 
-<a href="/{{barpost._id}}/edit">
-    <button class="pure-button">Edit Bar</button>
-</a>
 
-<form action="/{{barpost._id}}?_method=DELETE" method="POST">
-    <button class="pure-button" id="delete">Delete Bar</button>
-</form>
 
-<h3>Comments</h3>
+
 <div class="commentholder">
+    <h3>Comments</h3>
     <div>
-    {{#each barpost.comments}}
-    <div>
-        <h4>{{user}}</h4>
-        <p>{{text}}</p>
+        {{#each barpost.comments}}
+            <div>
+                <h4>{{user}}</h4>
+                <p>{{text}}</p>
+            </div>
+        {{/each}}
     </div>
-    {{/each}}
+    <a href="/{{barpost._id}}/comments">
+    <button class="pure-button">Leave a comment</button>
+</a>
 </div>
 
-</div>
 
 
-
-<a href="/{{barpost._id}}/comments">Leave a comment</a>

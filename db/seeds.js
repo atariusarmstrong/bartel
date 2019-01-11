@@ -22,6 +22,25 @@ User.deleteMany({})
 Bar.deleteMany({})
     .then(() => {
         return Bar.create({
+            barName: "Walden",
+            location: "Nashville, TN",
+            author: [],
+            image: 'https://media.timeout.com/images/105255148/1372/1029/image.jpg',
+            description: "Located in East Nashville, this bar has 36 drinks on tap! 12 beer, 12 wine, and 12 cocktails. The other amazing thing... they're all $10 or less.",
+            comments: []
+        }).then((bar)=>{
+            User.create({
+                username: "frankieeeee",
+                email: "frankye@frankye.com",
+                bio: "I've never been to Coachella and I'm not sure if I will.",
+                img: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            })
+            .then((frankie)=>{
+                bar.author.push(frankie)
+            })
+           
+        }).then(() => {
+        return Bar.create({
             barName: "Einstein's",
             location: "Atlanta, GA",
             author: [],
@@ -90,3 +109,4 @@ Bar.deleteMany({})
     })
 })
     })
+})
