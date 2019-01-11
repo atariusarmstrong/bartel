@@ -2,7 +2,7 @@ Bartel
 ====
 ### Unit 2 Project by Atarius Armstrong
 
-Bartel is a fullstack application where users can log their favorite bars and restaurants to go day drinking.
+Bartel is a fullstack application where users can log their favorite bars and restaurants to go day drinking. As someone who enjoy's a daytime beverage while on vacation, I figured it would be useful to have an app where people can see where they might want to visit while on vacation.
 
 [Heroku Deployment](https://frozen-shore-29155.herokuapp.com/)
 
@@ -41,4 +41,3 @@ Future Development
 Challenges Faced
 ---
 When creating CSS for this application, it would render for the majority of the application except for the User's profiles, the editing page for the bar posts, and the page for the bars' comments. So for those particular views I had to manually insert the stylings.
-
