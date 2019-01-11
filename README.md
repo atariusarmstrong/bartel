@@ -12,6 +12,11 @@ ERD
 ---
 ![alt text](./BartelERD.jpeg "Bartel ERD")
 
+Wireframe
+---
+![alt text](./BartelWireframe1.jpeg "Bartel Wireframe")
+![alt text](./BartelWireframe2.jpeg "Bartel Wireframe")
+
 
 Dependencies
 ---
