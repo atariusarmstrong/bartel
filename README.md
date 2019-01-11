@@ -12,7 +12,12 @@ Dependencies
 * Express
 * Node.js
 * Method Override
-* Passport Local
-* Express-session
 
-Royalty free images pulled from Pexels & Unsplash
+Technologies Used
+---
+* Language: HTML5, CSS3, Javascript
+* Design: Google Fonts, CoolHue
+* Royalty free images: Pexels
+
+Future Development
+---

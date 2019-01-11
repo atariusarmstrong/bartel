@@ -53,3 +53,12 @@ h3 {
     width: 50px;
     height: 50px;
 }
+
+.commentholder {
+    background-color: grey;
+    border: solid white 5px;
+    border-radius: 40px;
+    overflow: scroll;
+    width: 600px;
+    height: 200px;
+}
