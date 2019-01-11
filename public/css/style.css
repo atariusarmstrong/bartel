@@ -12,6 +12,7 @@ h1 {
     font-family: 'Pacifico', cursive;
     font-size: 60px;
     color: white;
+    text-align: center;
 }
 
 a {
@@ -68,6 +69,3 @@ h3 {
     width: 600px;
     height: 200px;
 }
- h4 {
-     
- }

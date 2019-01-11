@@ -11,9 +11,7 @@ const userController = {
     },
     show: (req, res) => {
         const userId = req.params.userId
-        console.log(userId)
         User.findById(userId).then((user) => {
-            console.log(user, 'hello')
             res.render('user/show', {user})
         })
     },

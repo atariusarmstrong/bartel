@@ -7,7 +7,6 @@ const appController = {
         res.render("login-signup/portal")
     },
     create: (req, res) => {
-        console.log(req.body)
         User.create({
             username: req.body.username,
             email: req.body.email,
