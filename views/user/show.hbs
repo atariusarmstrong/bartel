@@ -3,6 +3,10 @@
 <div><img src="{{user.img}}" class="profpic"/></div>
     
 <p>{{user.bio}}</p>
+<a href="/user/{{user._id}}/edit">
+    <button class="pure-button">Edit Profile</button>
+</a>
+
 <form action="/user/{{user._id}}?_method=DELETE" method="POST">
     <button class="pure-button">Delete Profile</button>
 </form>
