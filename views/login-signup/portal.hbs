@@ -1,15 +1,26 @@
 <!--FORM STYLING PROVIDED BY PUREFORM CSS-->
 
-<div class='portal'>
-    <h3>Sign Up</h3>
-    <form class="pure-form pure-form-stacked" action="/user" method="POST">
-        <fieldset>
-            <input name="username" id="name" type="text" placeholder="username" required/>
-            <input name="email" type="email" placeholder="email"/>
-            <input name="img" type="text" placeholder="picture"/>
-            <textarea name="bio" class="pure-input-1-2" placeholder="Tell us about yourself"></textarea>
-            <button type="submit" class="pure-button">Sign Up</button>
-        </fieldset>
-    </form>
-</div>
+<div class='portal row'>
+    <div class='signupform col-md-6 col-sm-10'>
+        <h3>Sign Up</h3>
+        <form action="/user" method="POST">
+            <div class='form-group row'>
+                <input class='col-md-8 col-xs-10' name="username" id="name" type="text" placeholder="username" required />
+            </div>
+            <div class='form-group row'>
+                <input class='col-md-8 col-xs-10' name="email" type="email" placeholder="email" />
+            </div>
+            <div class='form-group row'>
+                <input class='col-md-8 col-xs-10' name="img" type="text" placeholder="picture" />
+            </div>
+            <div class='form-group row'>
+                <textarea  class='col-md-8 col-xs-10' name="bio" placeholder="Tell us about yourself"></textarea>
+            </div>
+            <div class='form-group row'>
+            <button type="submit" class='btn btn-primary mb-2 col-3'>Sign Up</button>
 
+            </div>
+
+        </form>
+    </div>
+</div>
