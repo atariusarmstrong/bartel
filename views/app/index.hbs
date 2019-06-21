@@ -1,10 +1,20 @@
+<div class='row justify-content-center index'>
 
-    {{#each barpost}}
-        <div class="bartel-pin" style="background-image: url({{image}})">
-            <div class="inner-content">
-                <h3><a href="{{_id}}">{{barName}}</a></h3>
-                <p class="location">{{location}}</p>
+{{#each barpost}}
+
+    <div class='col-md-4 col-lg-3 col-sm-12 m-2'>
+    <div class='card barcard'>
+        <a href='{{_id}}'>
+            <img class='card-img-top' src='{{image}}' style="max-height: 400px; min-height: 300px;"/>
+            <div class='card-body'>
+                <h4 class='card-title'>{{barName}}</h4>
+                <p class='card-text'>{{location}}</p>
             </div>
-        </div>
-    {{/each}}    
+        </a>
 
+    </div>
+    </div>
+
+
+{{/each}}
+</div>

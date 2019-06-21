@@ -101,6 +101,8 @@ h6{
 .signupform {
     background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
     margin: auto;
+    border-radius: 5px;
+    box-shadow: 2.5px 2.5px 5px black;
 }
 .signupform h3 {
     text-align: center;
@@ -116,4 +118,30 @@ h6{
 .navbar-brand {
     font-family: "Pacifico", cursive;
     color: #28C76F;
+}
+
+.barcard {
+    background: #28C76F;
+    padding: 5px;
+}
+.barcard img {
+    padding: 5px 5px 0 5px;
+}
+.barcard:hover {
+    box-shadow: 2.5px 2.5px 10px grey;
+}
+.barcard h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.index {
+    background: url(https://images.unsplash.com/photo-1559160582-eab6966b680f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+    background-size: fill;
+    background-position: center;
+    background-attachment: fixed;
 }
