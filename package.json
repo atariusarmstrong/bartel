@@ -21,7 +21,7 @@
     "express-session": "^1.15.6",
     "hbs": "^4.0.4",
     "method-override": "^3.0.0",
-    "mongoose": "^5.4.2",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.18.9",
     "passport-local": "^1.0.0"
   },
